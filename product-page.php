@@ -10,12 +10,24 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			
+			<nav class="product-submenu">
+                <ul>
+                    <li>Fresh &amp; Saltwater Fish</li>
+                    <li>Aquariums</li>
+                    <li>Aquarium Cleaning Supplies</li>
+                    <li>Water Purifiers</li>
+                    <li>Environmental Accents</li>
+                </ul>
+            </nav>
 			<!-- Product Section -->
 			<div class="product-section">
 				<!-- Featured Product Image -->
-	            <img class="featured-image" src="images/tropical-fish.jpg" alt="tropical fish"/>
-
+				<?php if( get_field('featured_image') ): ?>
+ 
+					<img class="featured-image" src="<?php the_field('featured_image'); ?>" />
+ 
+				<?php endif; ?>
+	            
 	            <!-- Product Title -->
 	            <h1 class="product-title"><?php the_field('product_title'); ?></h1>
 				<!-- Product Description -->
@@ -36,6 +48,7 @@ get_header(); ?>
 
 			        <ul class="product-details">
 			        	<li><?php the_sub_field('list_item'); ?></li>
+			        </ul>
 			     	
 		     	<?php
 		 
@@ -50,7 +63,7 @@ get_header(); ?>
 				?>
 
 	            <!-- Call Out Box -->
-	            <p class="call-out-box"><?php the_field('call-out-box'); ?></p>
+	            <p class="call-out-box"><?php the_field('call_out_box'); ?></p>
 			</div>
 	        
 		</main><!-- #main -->
