@@ -10,15 +10,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<nav class="product-submenu">
-                <ul>
-                    <li>Fresh &amp; Saltwater Fish</li>
-                    <li>Aquariums</li>
-                    <li>Aquarium Cleaning Supplies</li>
-                    <li>Water Purifiers</li>
-                    <li>Environmental Accents</li>
-                </ul>
-            </nav>
+			<!-- Product Sub Menu -->
+			<?php wp_nav_menu( array( 'theme_location' => 'product-sub-menu' ) ); ?>
+           
 			<!-- Product Section -->
 			<div class="product-section">
 				<!-- Featured Product Image -->

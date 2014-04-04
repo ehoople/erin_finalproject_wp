@@ -632,10 +632,8 @@ a:active {
 /*--------------------------------------------------------------
 10.2 Product Template
 --------------------------------------------------------------*/
-	.featured-image {
-		display: block;
-		margin: 0 auto;
-		max-width: 80%;
+	.product-section {
+		margin-top: 100px;
 	}
 	.product-title {
 		text-align: center;
@@ -648,6 +646,39 @@ a:active {
 		position: relative;
 		margin-left: 8%;
 	}
+	.featured-image {
+		display: block;
+		margin: 0 auto;
+		max-width: 80%;
+	}
+	.product-description, .call-out-box {
+		margin: 35px 10%;
+	}
+	.product-details-intro {
+		
+	}
+	.product-details {
+		color: #3D3D42;
+		padding-top: 10px;
+		list-style: disc;
+		list-style-position: inside;
+	}
+	.call-out-box {
+		width: auto;
+		min-height: 100px;
+		box-sizing: border-box;
+		background: #FFF;
+		padding: 30px 4%;
+		border: 4px solid #FFF;
+		border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-o-border-radius: 4px;
+		-webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, .3);
+		-moz-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, .3);
+		box-shadow: inset 0px 4px 4px rgba(0, 0, 0, .3);	
+	}
+
 
 
 

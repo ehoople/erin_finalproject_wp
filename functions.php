@@ -43,6 +43,7 @@ function waynesfeed_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'waynesfeed' ),
+		'product-sub-menu' => __( 'Product Sub Menu', 'waynesfeed' )
 	) );
 
 	// Enable support for Post Formats.
@@ -124,39 +125,4 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-/**
-* Create custom post type for Products.
-*/
-add_action( 'init', 'create_my_post_types' );
 
-function create_my_post_types() {
- register_post_type( 'product', 
- array(
-      'labels' => array(
-      	'name' => __( 'Products' ),
-      	'singular_name' => __( 'Product' ),
-      	'add_new' => __( 'Add New' ),
-      	'add_new_item' => __( 'Add New Product' ),
-      	'edit' => __( 'Edit' ),
-      	'edit_item' => __( 'Edit Product' ),
-      	'new_item' => __( 'New Product' ),
-      	'view' => __( 'View Product' ),
-      	'view_item' => __( 'View Product' ),
-      	'search_items' => __( 'Search Products' ),
-      	'not_found' => __( 'No Products found' ),
-      	'not_found_in_trash' => __( 'No Products found in Trash' ),
-      	'parent' => __( 'Parent Product' ),
-      ),
- 'public' => true,
-      'menu_position' => 4,
-      'rewrite' => array('slug' => 'products'),
-      'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
-      'taxonomies' => array('category', 'post_tag'),
-      'publicly_queryable' => true,
-      'show_ui' => true,
-      'query_var' => true,
-      'capability_type' => 'post',
-      'hierarchical' => false,
-     )
-  );
-}
