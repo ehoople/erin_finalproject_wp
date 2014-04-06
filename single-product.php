@@ -10,6 +10,24 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		 <div id="product-main">
             
+            <!-- Product Submenu -->
+            <?php 
+             
+            $posts = get_field('product_menu');
+             
+            if( $posts ): ?>
+                <ul class="product-menu">
+                <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+                    <?php setup_postdata($post); ?>
+                    <li>
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </li>
+                <?php endforeach; ?>
+                </ul>
+                <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+            <?php endif; ?>
+
+
             <!-- Product Section -->
             <div class="product-section">
 
