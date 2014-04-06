@@ -134,7 +134,7 @@ input,
 select,
 textarea {
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
-	font-size: 1em;
+	font-size: 1.4em;
 	font-weight: 400;
 	line-height: 1.3em;
 	color: #282828;
@@ -571,12 +571,14 @@ a:active {
 	----------------------------- */
 	.site-title {
 		margin-left: 23%;
+		margin-top: 20px;
+		font-size: 1.8em;
 		line-height: 1.5em;
 	}
 	.site-description {
 		margin-left: 23%;
 		line-height: 1.5em;
-		font-size: 0.8em;
+		font-size: 0.9em;
 		color: #841628;
 	}
 	.logo {
@@ -600,11 +602,14 @@ a:active {
 	/*------------------------------
 	Main Content
 	----------------------------- */
+	#main {
+	}
 	.content-area {
-		width: 74%;
+		width: 70%;
 		float: right;
 		margin-top: 90px;
 		margin-bottom: 90px;
+		margin-right: 6%;
 	}
 
 	/*------------------------------
@@ -615,12 +620,30 @@ a:active {
 		float: left;
 		margin: 360px 4% 10px 2%;
 	}
+	.widget-title {
+		margin-bottom: 10px;
+	}
+	.highlight {
+		color: #841628;
+		font-weight: bold;
+;
+	}
 
 	/*------------------------------
 	Footer
 	----------------------------- */	
 	footer {
 		background: url(images/red-bg.png) repeat;
+		height: 120px;
+		clear: both;
+	}
+	.site-info {
+		padding-top: 90px;
+		margin-left: 88%;
+	}
+	.site-info a {
+		color: #FFF;
+		font-style: italic;
 	}
 
 /*--------------------------------------------------------------
@@ -632,19 +655,30 @@ a:active {
 /*--------------------------------------------------------------
 10.2 Product Template
 --------------------------------------------------------------*/
+	#main .menu {
+		list-style-type: none;
+		color: #841628;
+		font-weight: bold;
+		margin-left: 10%;
+	}
+	#main .menu li {
+		float: left;
+		padding-right: 3%;
+	}
+
 	.product-section {
-		margin-top: 100px;
+		padding-top: 75px;
 	}
 	.product-title {
 		text-align: center;
-		margin-top: -50px;
+		margin-top: -47px;
 		background: url(images/blue-ribbon.png) no-repeat;
 		height: 124px;
 		color: #FFF;
 		padding-top: 32px;
 		z-index: 999999;
 		position: relative;
-		margin-left: 8%;
+		margin-left: 5.3%;
 	}
 	.featured-image {
 		display: block;
@@ -655,13 +689,14 @@ a:active {
 		margin: 35px 10%;
 	}
 	.product-details-intro {
-		
+		margin-left: 10%;
 	}
 	.product-details {
 		color: #3D3D42;
 		padding-top: 10px;
 		list-style: disc;
 		list-style-position: inside;
+		margin-left: 10%;
 	}
 	.call-out-box {
 		width: auto;
