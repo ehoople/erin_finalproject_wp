@@ -382,14 +382,14 @@ a:active {
 }
 .main-navigation ul {
 	list-style: none;
-	font-size: 1.5em;
+	font-size: 0.5em;
 	margin-top: 30px;
-	margin-left: 24%;
-	/*display: none;*/
+	margin-left: 2%;
+	visibility: hidden;
 }
 .main-navigation li {
 	float: left;
-	margin: 10px 2%;
+	margin: 10px 3.2%;
 }
 .main-navigation a {
 	text-decoration: none;
@@ -655,17 +655,18 @@ a:active {
 /*--------------------------------------------------------------
 10.2 Product Template
 --------------------------------------------------------------*/
-	#main .menu {
-		list-style-type: none;
+	.product-menu {
+		list-style: none;
+	}
+	.product-menu li {
+		float: left;
+		margin-right: 2%;
+	}
+	.product-menu a {
 		color: #841628;
 		font-weight: bold;
-		margin-left: 10%;
+		font-size: 1.2em;
 	}
-	#main .menu li {
-		float: left;
-		padding-right: 3%;
-	}
-
 	.product-section {
 		padding-top: 75px;
 	}
@@ -678,7 +679,7 @@ a:active {
 		padding-top: 32px;
 		z-index: 999999;
 		position: relative;
-		margin-left: 5.3%;
+		margin-left: 9.3%;
 	}
 	.featured-image {
 		display: block;
