@@ -372,25 +372,26 @@ a:active {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
-.main-navigation {
+#site-navigation {
 	position: absolute;
 	top: 56px;
 	left: 56%;
 	width: 100%;
 	height: 170px;
-	background: url(images/menu-bg.png) no-repeat;
 }
-.main-navigation ul {
+#site-navigation ul {
 	list-style: none;
 	font-size: 0.5em;
 	margin-top: 30px;
 	margin-left: 2%;
-	visibility: hidden;
+	z-index: -99999999;
 }
-.main-navigation li {
+#site-navigation li {
 	float: left;
 	margin: 10px 3.2%;
+	display: block;
 }
+/*
 .main-navigation a {
 	text-decoration: none;
 	color: #D8A66A;
@@ -412,6 +413,29 @@ a:active {
 .main-navigation ul ul a {
 	width: 200px;
 }
+*/
+#site-navigation .lawn-bg a, #site-navigation .lawn-bg a:hover, #site-navigation .lawn-bg a:focus, 
+#site-navigation .pet-bg a, #site-navigation .pet-bg a:hover, #site-navigation .pet-bg a:focus, 
+#site-navigation .fish-bg a, #site-navigation .fish-bg a:hover, #site-navigation .fish-bg a:focus {
+	background-repeat: no-repeat;
+	color: transparent;
+	display: block;
+	width: 159px;
+	height: 177px;
+	margin-top: -40px;
+	margin-left: -90px;
+}
+#site-navigation .lawn-bg a, #site-navigation .lawn-bg a:hover, #site-navigation .lawn-bg a:focus {
+	background-image: url(images/lawn-garden-menu-bg.png);
+}
+#site-navigation .pet-bg a, #site-navigation .pet-bg a:hover, #site-navigation .pet-bg a:focus {
+	background-image: url(images/pet-food-menu-bg.png);
+}
+#site-navigation .fish-bg a, #site-navigation .fish-bg a:hover, #site-navigation .fish-bg a:focus {
+	background-image: url(images/aquariums-fish-menu-bg.png);
+}
+
+
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
