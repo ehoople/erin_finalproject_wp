@@ -12,9 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'waynesfeed' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'waynesfeed' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'waynesfeed' ), 'waynesfeed', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<a href="<?php echo esc_url( __( 'http://ehoople.studio.mcad.edu/portfolio/index.html', 'waynesfeed' ) ); ?>"><?php printf( __( '&copy;2014 Erin Hoople', 'waynesfeed' ), 'WordPress' ); ?></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
