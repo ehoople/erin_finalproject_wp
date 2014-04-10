@@ -12,7 +12,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			
 			<!-- Call Out Box -->
-	        <p class="about-section box"><?php the_field('call_out_box'); ?></p>
+	        <div class="about-section box">
+	        	<p><?php the_field('call_out_box'); ?></p>
+	        </div>
 	       
 	        <!-- Store Overview Section -->
 	        <div class="store-overview">

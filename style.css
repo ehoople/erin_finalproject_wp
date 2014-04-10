@@ -678,7 +678,80 @@ a:active {
 /*--------------------------------------------------------------
 10.1 Homepage Template
 --------------------------------------------------------------*/
+/* =================================
+	About Section 
+	================================= */
+	.about-section {
+		width: 60%;
+		margin-top: 30px;
+		margin-bottom: 25px;
+		font-size: 1.2em;
+	}
+	.box {
+		width: auto;
+		min-height: 115px;
+		box-sizing: border-box;
+		background: #FFF;
+		padding: 20px 20px 10px;
+		margin: 10px 5% 20px 1%;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-o-border-radius: 4px;
+		-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .3);
+		-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .3);
+		box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .3);
+		}
 
+
+	/* =================================
+	Store Overview 
+	================================= */
+	.section-title {
+		text-align: center;
+		text-transform: uppercase;
+		background: url(images/blue-ribbon.png) no-repeat;
+		color: #FFF;
+		padding-top: 31px;
+		height: 114px;
+		display: block;
+		}
+
+	/* =================================
+	Department 
+	================================= */
+	.department1, .department2, .department3 {
+		width: 33%;
+		padding-right: 4%;
+		float: left;
+	}
+	.wpframe {
+		background: #fff;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		padding: 8px;
+		-webkit-box-shadow: 1px 2px 1px #d1d1d1;
+		-moz-box-shadow: 1px 2px 1px #d1d1d1;
+		box-shadow: 1px 2px 1px #d1d1d1;
+	}
+	.section-title {
+		text-align: center;
+		margin-top: 20px;
+	}
+	.department-description {
+		max-width: 90%;
+		margin-top: 10px;
+	}
+	.product-stock {
+		color: #3D3D42;
+		padding-top: 0;
+		margin-top: -10px;
+		list-style: disc;
+		list-style-position: inside;
+		margin-left: 0;
+	}
 
 
 /*--------------------------------------------------------------
