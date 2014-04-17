@@ -709,22 +709,26 @@ a:active {
 	Store Overview 
 	================================= */
 	.section-title {
+		margin-left: -3%;
+		background: url(images/blue-ribbon.png) top center no-repeat;
+	}
+	.section-title h1 {
 		text-align: center;
 		text-transform: uppercase;
-		background: url(images/blue-ribbon.png) no-repeat;
 		color: #FFF;
-		padding-top: 31px;
+		padding-top: 15px;
 		height: 114px;
 		display: block;
-		}
+	}
 
 	/* =================================
 	Department 
 	================================= */
 	.department1, .department2, .department3 {
 		width: 33%;
-		padding-right: 4%;
-		float: left;
+		display: inline-block;
+		padding-right: 3%;
+		vertical-align: top;
 	}
 	.wpframe {
 		background: #fff;
@@ -736,9 +740,9 @@ a:active {
 		-moz-box-shadow: 1px 2px 1px #d1d1d1;
 		box-shadow: 1px 2px 1px #d1d1d1;
 	}
-	.section-title {
+	.department-title {
+		padding-top: 10px;
 		text-align: center;
-		margin-top: 20px;
 	}
 	.department-description {
 		max-width: 90%;
