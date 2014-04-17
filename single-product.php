@@ -39,7 +39,9 @@ get_header(); ?>
                 <?php endif; ?>
                 
                 <!-- Product Title -->
-                <h1 class="product-title"><?php the_field('product_title'); ?></h1>
+                <div class="product-title">
+                    <h1><?php the_field('product_title'); ?></h1>
+                </div>
 
                 <!-- Product Description -->
                 <p class="product-description"><?php the_field('product_description'); ?></p>
