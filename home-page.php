@@ -23,7 +23,8 @@ get_header(); ?>
 	        	<div class="section-title">
 	        		<h1><?php the_field('section_title'); ?></h1>
 	        	</div>
-	        	
+
+	        	<div class="department-section">
 	        	<!-- Department Section -->
 					<?php 
 
@@ -73,6 +74,7 @@ get_header(); ?>
 
 					endif;
 					?>
+				</div>
 	        </div><!-- .store-overview -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
