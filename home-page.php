@@ -20,8 +20,10 @@ get_header(); ?>
 	        <div class="store-overview">
 	       
 	        	<!-- Page Title -->
-	        	<h1 class="section-title"><?php the_field('section_title'); ?></h1>
-
+	        	<div class="section-title">
+	        		<h1><?php the_field('section_title'); ?></h1>
+	        	</div>
+	        	
 	        	<!-- Department Section -->
 					<?php 
 
