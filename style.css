@@ -380,6 +380,7 @@ a:active {
 	width: 100%;
 	height: 170px;
 }
+
 #site-navigation ul {
 	list-style: none;
 	font-size: 0.5em;
@@ -466,6 +467,7 @@ a:active {
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
 }
+
 /* Small menu */
 .menu-toggle {
 	cursor: pointer;
@@ -480,7 +482,7 @@ a:active {
 	.main-navigation ul {
 		display: none;
 	}
-}
+} 
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -1007,4 +1009,47 @@ embed,
 iframe,
 object {
 	max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+	#site-navigation {
+		left: 50%;
+	}
+	#site-navigation .lawn-bg a, #site-navigation .lawn-bg a:hover, #site-navigation .lawn-bg a:focus {
+	background-size: 90%;
+	left: 5%;
+	}
+	#site-navigation .pet-bg a, #site-navigation .pet-bg a:hover, #site-navigation .pet-bg a:focus {
+		background-size: 90%;
+		left: 16%;
+	}
+	#site-navigation .fish-bg a, #site-navigation .fish-bg a:hover, #site-navigation .fish-bg a:focus {
+		background-size: 90%;
+		left: 27%;
+	}
+	.product-menu {
+		width: 92%;
+		font-size: 1.2em;
+		line-height: 1.6em;
+	}
+	.product-menu li {
+		padding-right: 3%;
+	}
+	.product-title {
+		background-size: 95%;
+	}
+	.product-title h1 {
+		padding-top: 13px;
+	}
+	.section-title {
+		background-size: 95%;
+	}
+	.section-title h1 {
+		padding-top: 12px;
+	}
+	.department1, .department2, .department3 {
+		width: 32%;
+	}
 }
