@@ -393,29 +393,7 @@ a:active {
 	margin: -22px 3.2%;
 	display: block;
 }
-/*
-.main-navigation a {
-	text-decoration: none;
-	color: #D8A66A;
-	font-weight: bold;
-}
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	display: none;
-	float: left;
-	left: 0;
-	position: absolute;
-	top: 1.5em;
-	z-index: 99999;
-}
-.main-navigation ul ul ul {
-	left: 100%;
-	top: 0;
-}
-.main-navigation ul ul a {
-	width: 200px;
-}
-*/
+
 #site-navigation .lawn-bg a, #site-navigation .lawn-bg a:hover, #site-navigation .lawn-bg a:focus, 
 #site-navigation .pet-bg a, #site-navigation .pet-bg a:hover, #site-navigation .pet-bg a:focus, 
 #site-navigation .fish-bg a, #site-navigation .fish-bg a:hover, #site-navigation .fish-bg a:focus {
@@ -430,19 +408,19 @@ a:active {
 #site-navigation .lawn-bg a, #site-navigation .lawn-bg a:hover, #site-navigation .lawn-bg a:focus {
 	background-image: url(images/lawn-garden-menu-bg.png);
 	position: absolute;
-	bottom: 57px;
+	bottom: 26px;
 	left: 3%;
 }
 #site-navigation .pet-bg a, #site-navigation .pet-bg a:hover, #site-navigation .pet-bg a:focus {
 	background-image: url(images/pet-food-menu-bg.png);
 	position: absolute;
-	bottom: 57px;
+	bottom: 26px;
 	left: 13%;
 }
 #site-navigation .fish-bg a, #site-navigation .fish-bg a:hover, #site-navigation .fish-bg a:focus {
 	background-image: url(images/aquariums-fish-menu-bg.png);
 	position: absolute;
-	bottom: 57px;
+	bottom: 26px;
 	left: 23%;
 }
 #site-navigation .lawn-bg a:hover, 
